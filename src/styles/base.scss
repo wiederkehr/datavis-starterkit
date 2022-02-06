@@ -1,0 +1,22 @@
+// Base Styles
+////////////////////////////////////////
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: $c-background;
+  color: $c-base;
+  font-family: $ff-base;
+  font-size: $fs-body2;
+  line-height: $lh-base;
+}
+
+a,
+a:focus,
+a:visited {
+  color: $c-accent;
+}

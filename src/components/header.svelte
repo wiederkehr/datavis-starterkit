@@ -11,6 +11,7 @@
 <style lang="scss">
   header {
     background-color: $c-surface;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     padding: $space-sm $space-lg;
     h1 {
       font-size: $fs-head1;

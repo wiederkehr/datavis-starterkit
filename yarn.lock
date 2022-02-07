@@ -57,6 +57,14 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
+"@observablehq/plot@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@observablehq/plot/-/plot-0.4.0.tgz#5c85c2740e82cdc02f397cb36dc026e6fb01ac17"
+  integrity sha512-KWcBCvc2L9caziWz0MBlZUOcmhq2b3OKKJ/7kf0bKBhk9Yt3I3hG9oWyZ/lOboYsA6bG0gOdvv+nRSatcKND+A==
+  dependencies:
+    d3 "^7.3.0"
+    isoformat "0.2"
+
 "@rollup/pluginutils@^4.1.2":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.1.2.tgz#ed5821c15e5e05e32816f5fb9ec607cdf5a75751"
@@ -1065,6 +1073,11 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
+
+isoformat@0.2:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/isoformat/-/isoformat-0.2.1.tgz#2526344a4276a101b2881848dc337d1d2ae74494"
+  integrity sha512-tFLRAygk9NqrRPhJSnNGh7g7oaVWDwR0wKh/GM2LgmPa50Eg4UfyaCO4I8k6EqJHl1/uh2RAD6g06n5ygEnrjQ==
 
 js-tokens@^4.0.0:
   version "4.0.0"

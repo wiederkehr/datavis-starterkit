@@ -1,7 +1,14 @@
-<template>
-  <slot></slot>
-</template>
+<script>
+  import Header from '$components/Header.svelte';
+  import Body from '$components/Body.svelte';
+  import Footer from '$components/Footer.svelte';
+  import '$styles/app.scss';
+</script>
 
-<style lang='scss' global>
-  @import '../styles/index.scss';
-</style>
+<markup>
+  <Header />
+  <Body>
+    <slot />
+  </Body>
+  <Footer />
+</markup>

@@ -1,0 +1,101 @@
+// Style Constants
+////////////////////////////////////////
+
+// Font Families
+////////////////////////////////////////
+$font-family-sans: 'Fira Sans', sans-serif;
+$font-family-mono: 'Fira Mono', sans-serif;
+$font-family-base: $font-family-sans;
+
+// Font Sizes
+////////////////////////////////////////
+$font-size-1: 12px;
+$font-size-2: 16px;
+$font-size-3: 24px;
+$font-size-4: 32px;
+$font-size-5: 40px;
+$font-size-6: 48px;
+$font-size-base: $font-size-2;
+
+// Line Heights
+////////////////////////////////////////
+$line-height-wide: 1.75;
+$line-height-medium: 1.5;
+$line-height-narrow: 1.25;
+$line-height-base: $line-height-medium;
+
+// Colors
+////////////////////////////////////////
+$color-white: #ffffff;
+$color-black: #000000;
+$color-mono-0: #eceff1;
+$color-mono-1: #cfd8dc;
+$color-mono-2: #b0bec5;
+$color-mono-3: #90a4ae;
+$color-mono-4: #78909c;
+$color-mono-6: #607d8b;
+$color-mono-7: #546e7a;
+$color-mono-8: #455a64;
+$color-mono-9: #37474f;
+$color-mono-10: #263238;
+$color-accent: #00796b;
+$color-base: $color-black;
+
+// Interface Colors
+$color-foreground: $color-white;
+$color-background: $color-mono-0;
+$color-foreground-border: $color-mono-0;
+$color-background-border: $color-mono-1;
+
+// Radius
+////////////////////////////////////////
+$-radius-0: 0;
+$-radius-1: 2px;
+$-radius-2: 4px;
+$-radius-3: 8px;
+$-radius-4: 16px;
+
+// Shadows
+////////////////////////////////////////
+$shadow-0: none;
+$shadow-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-2: 0 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-3: 0 8px 16px rgba(0, 0, 0, 0.1);
+$shadow-4: 0 12px 24px rgba(0, 0, 0, 0.1);
+
+// Spaces
+////////////////////////////////////////
+$space-0: 0;
+$space-1: 8px;
+$space-2: 16px;
+$space-3: 24px;
+$space-4: 32px;
+
+// Break Points
+////////////////////////////////////////
+$breakpoint-xs: 480px;
+$breakpoint-sm: 670px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1600px;
+
+$screen-xs: $breakpoint-xs;
+$screen-xs-min: $screen-xs;
+$screen-sm: $breakpoint-sm;
+$screen-sm-min: $screen-sm;
+$screen-md: $breakpoint-md;
+$screen-md-min: $screen-md;
+$screen-lg: $breakpoint-lg;
+$screen-lg-min: $screen-lg;
+$screen-xl: $breakpoint-xl;
+$screen-xl-min: $screen-xl;
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xl-min - 1);
+
+$m-min-sm: 'screen and (min-width: #{$screen-sm-min})';
+$m-min-md: 'screen and (min-width: #{$screen-md-min})';
+$m-min-lg: 'screen and (min-width: #{$screen-lg-min})';
+$m-min-xl: 'screen and (min-width: #{$screen-xl-min})';

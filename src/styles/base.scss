@@ -8,15 +8,15 @@ body {
 }
 
 body {
-  background-color: $c-background;
-  color: $c-base;
-  font-family: $ff-base;
-  font-size: $fs-body2;
-  line-height: $lh-base;
+  background-color: $color-background;
+  color: $color-base;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
 }
 
 a,
 a:focus,
 a:visited {
-  color: $c-accent;
+  color: $color-accent;
 }

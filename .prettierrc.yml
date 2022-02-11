@@ -3,6 +3,7 @@
 # Override
 arrowParens: 'avoid'
 singleQuote: true
+
 # Default
 bracketSameLine: false
 bracketSpacing: true
@@ -15,3 +16,9 @@ semi: true
 tabWidth: 2
 trailingComma: 'es5'
 useTabs: false
+
+# Svelte
+svelteSortOrder: 'options-scripts-styles-markup'
+svelteStrictMode: false
+svelteAllowShorthand: true
+svelteIndentScriptAndStyle: true

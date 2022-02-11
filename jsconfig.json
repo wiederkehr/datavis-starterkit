@@ -2,9 +2,31 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"]
+			"$actions/*": [
+				"src/actions/*"
+			],
+			"$components/*": [
+				"src/components/*"
+			],
+			"$data/*": [
+				"src/data/*"
+			],
+			"$stores/*": [
+				"src/stores/*"
+			],
+			"$styles/*": [
+				"src/styles/*"
+			],
+			"$utilities/*": [
+				"src/utilities/*"
+			],
 		}
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+	"include": [
+		"src/**/*.js", 
+		"src/**/*.svelte"
+	],
+	"exclude": [
+		"tasks/*.js"
+	]
 }

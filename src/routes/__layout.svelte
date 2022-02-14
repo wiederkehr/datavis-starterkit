@@ -1,14 +1,23 @@
 <script>
+  import { browser } from '$app/env';
+  import theme from '$stores/theme.js';
+  import Theme from '$components/helpers/Theme.svelte';
   import Header from '$components/Header.svelte';
-  import Body from '$components/Body.svelte';
+  import Main from '$components/Main.svelte';
   import Footer from '$components/Footer.svelte';
   import '$styles/app.scss';
+
+  const toggleTheme = () => ($theme = $theme === 'dark' ? 'light' : 'dark');
+
+  $: if (browser) document.body.className = $theme;
 </script>
 
 <markup>
+  <Theme bind:theme={$theme} />
   <Header />
-  <Body>
+  <button on:click={toggleTheme}>Toggle theme</button>
+  <Main>
     <slot />
-  </Body>
+  </Main>
   <Footer />
 </markup>

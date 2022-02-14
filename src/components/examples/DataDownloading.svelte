@@ -9,14 +9,15 @@
 
 <style lang="scss">
   button {
-    font-family: $font-family-mono;
-    background: $color-foreground;
-    border: 2px solid $color-base;
-    padding: $space-1;
+    background: var(--color-foreground);
+    border: 2px solid var(--color-base);
     border-radius: $radius-2;
+    color: var(--color-base);
     cursor: pointer;
+    font-family: $font-family-mono;
+    padding: $space-1;
     &:hover {
-      background: $color-background;
+      background: var(--color-background);
     }
   }
 </style>

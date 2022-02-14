@@ -1,0 +1,22 @@
+// Style Variables
+////////////////////////////////////////
+@import './constants.scss';
+
+// Light Theme
+////////////////////////////////////////
+body,
+body.light {
+  --color-base: #{$color-black};
+  --color-accent: #{$color-accent};
+  --color-foreground: #{$color-white};
+  --color-background: #{$color-mono-0};
+}
+
+// Dark Theme
+////////////////////////////////////////
+body.dark {
+  --color-base: #{$color-white};
+  --color-accent: #{$color-accent};
+  --color-foreground: #{$color-mono-9};
+  --color-background: #{$color-mono-10};
+}

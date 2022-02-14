@@ -10,6 +10,7 @@
   }
   .square {
     background-color: $color-mono-1;
+    color: $color-black;
     display: flex;
     align-items: center;
     justify-content: center;

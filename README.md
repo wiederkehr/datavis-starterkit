@@ -31,6 +31,8 @@
   - [svelte-themer](https://github.com/josefaidt/svelte-themer)
   - [svelte-themes](https://github.com/beynar/svelte-themes)
   - [svelte-dark-mode](https://github.com/metonym/svelte-dark-mode)
+  - [Create a Simple Dark Mode Toggle With Svelte](https://dev.to/lenaschnedlitz/create-a-simple-dark-mode-toggle-with-svelte-4b3g)
+  - [Dark Mode in SvelteKit with and without JavaScript](https://www.davidwparker.com/posts/dark-mode-in-sveltekit-with-and-without-javascript)
 - 🅾️ [Something] for working with Markdown
 - 🅾️ [Something] for exporting static assets like SVG and PNG
 
@@ -68,12 +70,12 @@
 
 - ✅ Data loading
 - ✅ Data exporting
-- 🅾️ SVG exporting
-- 🅾️ Theme toggle with localStorage
 - ✅ Chart component
-- 🅾️ Interface component
 - ✅ Custom fonts from Google Fonts
 - ✅ Sticky chart layout
+- 🅾️ SVG exporting
+- 🅾️ Theme toggle with localStorage
+- 🅾️ Interface component
 - 🅾️ Search with autocomplete
 
 ### Stores
@@ -86,6 +88,7 @@
 ### Actions
 
 - ✅ Action for checking if a component is in the viewport
+- ✅ Action for checking if the user clicked outside a component
 
 ## Development
 

@@ -1,9 +1,7 @@
 <style lang="scss">
   header {
-    background-color: $color-mono-10;
-    padding: $space-4;
+    padding: $space-4 $space-4 0 $space-4;
     h1 {
-      color: $color-white;
       font-size: $font-size-3;
     }
   }

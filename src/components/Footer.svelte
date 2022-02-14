@@ -1,6 +1,6 @@
 <style lang="scss">
   footer {
-    padding: $space-4;
+    padding: 0 $space-4 $space-4 $space-4;
   }
 </style>
 

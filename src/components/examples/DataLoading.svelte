@@ -1,6 +1,8 @@
 <script>
-  import teams from '$data/TeamGS.csv';
-  const teamList = teams.map(team => team.NAT);
+  import data from '$data/womens-hockey-teams-gamescores.csv';
+  const teams = data
+    .map(team => team.NAT)
+    .filter((value, index, self) => self.indexOf(value) === index);
 </script>
 
 <style lang="scss">
@@ -10,4 +12,4 @@
   }
 </style>
 
-<markup><code>{teamList}</code></markup>
+<markup><code>Teams: {teams}</code></markup>

@@ -11,6 +11,7 @@ const config = {
     adapter: adapter(),
     vite: {
       resolve: {
+        // Set alias for top-level folders in the src folder
         alias: {
           $actions: path.resolve('./src/actions'),
           $components: path.resolve('./src/components'),
@@ -24,11 +25,13 @@ const config = {
     },
   },
   preprocess: sveltePreprocess({
+    // Rename the default name of the markup tag from <template> to <markup>
     markupTagName: 'markup',
     postcss: {
       plugins: [autoprefixer],
     },
     scss: {
+      // Import the SCSS constants file at the top every SCSS style definition
       prependData: `@import 'src/styles/constants.scss';`,
     },
   }),

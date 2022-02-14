@@ -13,20 +13,25 @@
 - ✅ Sass as CSS superset
 - ✅ TypeScript as JS superset
 - ✅ PostCSS for transforming CSS styles
-- ✅ PostCSS with autoprefixer add vendor prefixes to CSS rules
+- ✅ PostCSS with autoprefixer to add vendor prefixes to CSS rules
 
 ### Libraries
 
 - ✅ Lodash for convenience functions
 - ✅ D3 for building custom, advanced charts
 - ✅ Plot for building standard, basic charts
-- 🅾️ Arquero or Tidy for working with data
-- ✅ [Something] [chroma](https://github.com/gka/chroma.js/) for working with color
+- ✅ [Chroma](https://github.com/gka/chroma.js/) for working with color
+- ✅ [Feather Icons](https://github.com/feathericons/feather) for user interface icons
+- ✅ [Textures](https://github.com/riccardoscalco/textures) for working with textures
+- ✅ [Tidy](https://github.com/pbeshai/tidy) for working with data
 - 🅾️ [Something] [luxon](https://github.com/moment/luxon), [dayjs](https://github.com/iamkun/dayjs/), [date-fns](https://github.com/date-fns/date-fns) for working with dates
-- 🅾️ [Textures](https://github.com/riccardoscalco/textures) for working with textures
 - 🅾️ [Something] for user interface elements
-- 🅾️ [Something] for user interface icons (Feather Icons)
 - 🅾️ [Something] for geometry
+- 🅾️ [Something] for light and dark themes
+  - [svelte-themer](https://github.com/josefaidt/svelte-themer)
+  - [svelte-themes](https://github.com/beynar/svelte-themes)
+  - [svelte-dark-mode](https://github.com/metonym/svelte-dark-mode)
+- 🅾️ [Something] for working with Markdown
 - 🅾️ [Something] for exporting static assets like SVG and PNG
 
 ### Structure
@@ -59,18 +64,28 @@
 
 - ✅ Vite configuration for loading CSV and TSV files
 
-### Recipes
+### Components and Recipes
 
 - ✅ Data loading
 - ✅ Data exporting
-- ✅ SVG exporting
+- 🅾️ SVG exporting
+- 🅾️ Theme toggle with localStorage
 - ✅ Chart component
 - 🅾️ Interface component
-- 🅾️ State management
-- 🅾️ Store state as URL parameter
 - ✅ Custom fonts from Google Fonts
 - ✅ Sticky chart layout
 - 🅾️ Search with autocomplete
+
+### Stores
+
+- ✅ Store for width and height of the viewport
+- ✅ Store for media queries
+- 🔄 Store for user interface state
+- 🅾️ Store state as URL parameter
+
+### Actions
+
+- ✅ Action for checking if a component is in the viewport
 
 ## Development
 

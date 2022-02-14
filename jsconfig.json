@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
+		// Set alias for top-level folders in the src folder
 		"paths": {
 			"$actions/*": [
 				"src/actions/*"

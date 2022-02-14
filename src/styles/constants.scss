@@ -24,6 +24,13 @@ $line-height-medium: 1.5;
 $line-height-narrow: 1.25;
 $line-height-base: $line-height-medium;
 
+// Z-Indeces
+////////////////////////////////////////
+$z-0: 0;
+$z-1: 10;
+$z-2: 100;
+$z-3: 1000;
+
 // Colors
 ////////////////////////////////////////
 $color-white: #ffffff;
@@ -49,11 +56,11 @@ $color-background-border: $color-mono-1;
 
 // Radius
 ////////////////////////////////////////
-$-radius-0: 0;
-$-radius-1: 2px;
-$-radius-2: 4px;
-$-radius-3: 8px;
-$-radius-4: 16px;
+$radius-0: 0;
+$radius-1: 2px;
+$radius-2: 4px;
+$radius-3: 8px;
+$radius-4: 16px;
 
 // Shadows
 ////////////////////////////////////////
@@ -73,21 +80,20 @@ $space-4: 32px;
 
 // Break Points
 ////////////////////////////////////////
-$breakpoint-xs: 480px;
-$breakpoint-sm: 670px;
-$breakpoint-md: 960px;
-$breakpoint-lg: 1200px;
-$breakpoint-xl: 1600px;
+// NOTE: Align these values with the JS values in /stores/mediaquery
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
 
-$screen-xs: $breakpoint-xs;
-$screen-xs-min: $screen-xs;
 $screen-sm: $breakpoint-sm;
-$screen-sm-min: $screen-sm;
 $screen-md: $breakpoint-md;
-$screen-md-min: $screen-md;
 $screen-lg: $breakpoint-lg;
-$screen-lg-min: $screen-lg;
 $screen-xl: $breakpoint-xl;
+
+$screen-sm-min: $screen-sm;
+$screen-md-min: $screen-md;
+$screen-lg-min: $screen-lg;
 $screen-xl-min: $screen-xl;
 
 $screen-xs-max: ($screen-sm-min - 1);
@@ -95,7 +101,9 @@ $screen-sm-max: ($screen-md-min - 1);
 $screen-md-max: ($screen-lg-min - 1);
 $screen-lg-max: ($screen-xl-min - 1);
 
-$m-min-sm: 'screen and (min-width: #{$screen-sm-min})';
-$m-min-md: 'screen and (min-width: #{$screen-md-min})';
-$m-min-lg: 'screen and (min-width: #{$screen-lg-min})';
-$m-min-xl: 'screen and (min-width: #{$screen-xl-min})';
+// Media Queries
+////////////////////////////////////////
+$mq-min-sm: 'screen and (min-width: #{$screen-sm-min})';
+$mq-min-md: 'screen and (min-width: #{$screen-md-min})';
+$mq-min-lg: 'screen and (min-width: #{$screen-lg-min})';
+$mq-min-xl: 'screen and (min-width: #{$screen-xl-min})';

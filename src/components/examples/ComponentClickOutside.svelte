@@ -1,0 +1,24 @@
+<script>
+  import clickOutside from '$actions/clickOutside.js';
+  let clickedOutside = false;
+</script>
+
+<style lang="scss">
+  .important {
+    color: seagreen;
+  }
+</style>
+
+<markup>
+  <code
+    use:clickOutside={{
+      enabled: true,
+      callback: () => (clickedOutside = true),
+    }}
+  >
+    Has the user clicked outside this component?
+    <span class="important">
+      {clickedOutside ? 'Yes' : ''}
+    </span>
+  </code>
+</markup>

@@ -4,7 +4,7 @@
   import { onMount } from 'svelte';
 
   let svg;
-  const texture = textures.lines().thicker();
+  const texture = textures.lines().thicker().stroke('var(--color-base)');
 
   const drawTexture = () => {
     svg = d3.select(svg);

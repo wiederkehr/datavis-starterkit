@@ -13,7 +13,7 @@
 </style>
 
 <markup>
-  <code
+  <div
     use:inView={{ bottom: 200, top: 200 }}
     on:enter={() => (isInView = true)}
     on:exit={() => (isInView = false)}
@@ -22,5 +22,5 @@
     <span class:positive={isInView} class:negative={!isInView}>
       {isInView ? 'Yes' : 'No'}
     </span>
-  </code>
+  </div>
 </markup>

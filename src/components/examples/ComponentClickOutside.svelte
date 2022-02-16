@@ -13,7 +13,7 @@
 </style>
 
 <markup>
-  <code
+  <div
     use:clickOutside={{
       enabled: true,
       callback: () => (clickedOutside = true),
@@ -23,5 +23,5 @@
     <span class={clickedOutside ? 'positive' : 'negative'}>
       {clickedOutside ? 'Yes' : 'No'}
     </span>
-  </code>
+  </div>
 </markup>

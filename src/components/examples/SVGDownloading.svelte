@@ -1,4 +1,5 @@
 <script>
+  import Button from '$components/interface/Button.svelte';
   import { downloadSVG, downloadPNG } from '$functions/download';
   import { colors } from '$styles/constants.js';
 </script>
@@ -6,18 +7,6 @@
 <style lang="scss">
   .buttons {
     margin: $space-1 0;
-  }
-  button {
-    background: var(--color-foreground);
-    border: 2px solid var(--color-base);
-    border-radius: $radius-2;
-    color: var(--color-base);
-    cursor: pointer;
-    font-family: $font-family-mono;
-    padding: $space-1;
-    &:hover {
-      background: var(--color-background);
-    }
   }
 </style>
 
@@ -29,11 +18,11 @@
     </svg>
   </div>
   <div class="buttons">
-    <button on:click={() => downloadSVG('#svg-to-download')}
-      >Download SVG</button
+    <Button on:click={() => downloadSVG('#svg-to-download')}
+      >Download SVG</Button
     >
-    <button on:click={() => downloadPNG('#svg-to-download')}
-      >Download PNG</button
+    <Button on:click={() => downloadPNG('#svg-to-download')}
+      >Download PNG</Button
     >
   </div>
 </markup>

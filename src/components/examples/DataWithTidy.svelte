@@ -17,7 +17,6 @@
     distinct(['NAT']),
     map(d => d.NAT)
   );
-  // FIXME: These calculations can’t be correct
   const stats = tidy(
     data,
     mutate({

@@ -14,7 +14,7 @@
   onMount(() => {
     chart = Plot.plot({
       marks: [Plot.barX(data, { x: 'height', y: 'name', fill: colors.accent })],
-      style: { color: colors.black, backgroundColor: 'transparent' },
+      style: { color: 'var(--color-base)', backgroundColor: 'transparent' },
     }).outerHTML;
   });
 </script>

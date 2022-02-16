@@ -25,32 +25,34 @@
 - ✅ [Textures](https://github.com/riccardoscalco/textures) for working with textures
 - ✅ [Tidy](https://github.com/pbeshai/tidy) for working with data
 - ✅ [SVGCrowbar](https://github.com/cy6erskunk/svg-crowbar) for exporting static assets like SVG and PNG
+- ✅ [Math.js](https://github.com/josdejong/mathjs) for math
+- ✅ [Geometric.js](https://github.com/HarryStevens/geometric) for geometry
+- 🔄 [Something] for user interface elements
+  - [Inclusive Components](https://inclusive-components.design/)
+  - [Accessible Components](https://github.com/scottaohara/accessible_components)
 - 🅾️ [Something] for working with dates
   - [luxon](https://github.com/moment/luxon)
   - [dayjs](https://github.com/iamkun/dayjs/)
   - [date-fns](https://github.com/date-fns/date-fns)
-- 🅾️ [Something] for user interface elements
-- 🅾️ [Something] for math and geometry
-  - [Math.js]
-  - [Geometric]
 - 🅾️ [Something] for working with Markdown
 
 ### Structure
 
-- 🅾️ Basic README structure
 - ✅ Basic Folder structure
   - ✅ Folder _src/actions_ for `use` actions for components
   - ✅ Folder _src/components_ for components
   - ✅ Folder _src/data_ for storing static data files
   - ✅ Folder _src/routes_ for pages
   - ✅ Folder _src/stores_ for stores of data
-  - ✅ Folder _src/utilities_ for utility functions
+  - ✅ Folder _src/functions_ for utility functions
 - ✅ Basic CSS file structure
   - ✅ File _src/styles/app_ for importing all following files
   - ✅ File _src/styles/base_ for root CSS styling
-  - ✅ File _src/styles/constants_ for CSS constants
+  - ✅ File _src/styles/constants_ for CSS and JS constants
   - ✅ File _src/styles/fonts_ for @font-face declarations
   - ✅ File _src/styles/reset_ for CSS style reset across browsers
+  - ✅ File _src/styles/variables_ for CSS variables
+- 🅾️ Basic README structure
 
 ### Code
 
@@ -74,7 +76,7 @@
 - ✅ Sticky chart layout
 - ✅ Theme toggle with localStorage
 - ✅ SVG exporting
-- 🅾️ Interface component
+- ✅ Interface component
 - 🅾️ Search with autocomplete
 
 ### Stores
@@ -83,7 +85,7 @@
 - ✅ Store for media queries
 - ✅ Store for theme
 - 🔄 Store for user interface state
-- 🅾️ Store state as URL parameter
+- 🔄 Store state as URL parameter
 
 ### Actions
 

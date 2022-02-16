@@ -1127,6 +1127,11 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
+geometric@^2.2.10:
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/geometric/-/geometric-2.2.10.tgz#fcf96ad5a8c6287e143eadc010953b341db73f79"
+  integrity sha512-X0ZKy6xijnTLTR+cc/OkJHdTlxgAOfcSAixauvsK/N4RdfctsPyOwfwFT9ZfQmIxsLS1avWg65lsEOeGdxjKqw==
+
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"

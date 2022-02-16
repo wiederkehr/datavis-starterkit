@@ -1,5 +1,5 @@
 <script context="module">
-  import { forEach, trim } from 'lodash-es';
+  import { forEach, trim } from 'lodash';
 
   export const getLocation = () => {
     const hashPosition = window.location.href.indexOf('#/');

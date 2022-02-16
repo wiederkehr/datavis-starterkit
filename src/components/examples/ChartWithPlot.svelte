@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import * as Plot from '@observablehq/plot';
+  import { colors } from '$styles/constants.js';
 
   const data = [
     { name: 'Tollak', height: 100 },
@@ -12,18 +13,12 @@
 
   onMount(() => {
     chart = Plot.plot({
-      marks: [Plot.barX(data, { x: 'height', y: 'name' })],
+      marks: [Plot.barX(data, { x: 'height', y: 'name', fill: colors.accent })],
+      style: { color: colors.black, backgroundColor: 'transparent' },
     }).outerHTML;
   });
 </script>
 
-<style lang="scss">
-  .chart {
-    background-color: $color-white;
-    padding: $space-4;
-  }
-</style>
-
 <markup>
-  <div class="chart">{@html chart}</div>
+  {@html chart}
 </markup>

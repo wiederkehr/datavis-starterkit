@@ -1,9 +1,9 @@
 <script>
-  import { downloadCSV, downloadJSON } from '$functions/download';
-  import data from '$data/womens-hockey-teams-gamescores.csv';
-  import { groupBy } from 'lodash';
-  const csv = data;
-  const json = groupBy(data, 'NAT');
+  import { browser } from '$app/env';
+  import theme from '$stores/theme.js';
+  import Theme from '$components/utilities/Theme.svelte';
+  const toggleTheme = () => ($theme = $theme === 'dark' ? 'light' : 'dark');
+  $: if (browser) document.body.className = $theme;
 </script>
 
 <style lang="scss">
@@ -22,6 +22,6 @@
 </style>
 
 <markup>
-  <button on:click={() => downloadCSV(csv)}>Download CSV</button>
-  <button on:click={() => downloadJSON(json)}>Download JSON</button>
+  <Theme bind:theme={$theme} />
+  <button on:click={toggleTheme}>Toggle theme</button>
 </markup>

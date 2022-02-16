@@ -7,16 +7,16 @@
 body,
 body.light {
   --color-base: #{$color-black};
-  --color-accent: #{$color-accent};
-  --color-foreground: #{$color-white};
-  --color-background: #{$color-mono-0};
+  --color-muted: #{$color-mono-5};
+  --color-foreground: #{$color-mono-1};
+  --color-background: #{$color-mono-2};
 }
 
 // Dark Theme
 ////////////////////////////////////////
 body.dark {
   --color-base: #{$color-white};
-  --color-accent: #{$color-accent};
-  --color-foreground: #{$color-mono-9};
-  --color-background: #{$color-mono-10};
+  --color-muted: #{$color-mono-4};
+  --color-foreground: #{$color-mono-7};
+  --color-background: #{$color-mono-8};
 }

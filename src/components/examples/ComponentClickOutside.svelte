@@ -4,8 +4,11 @@
 </script>
 
 <style lang="scss">
-  .important {
-    color: seagreen;
+  .positive {
+    color: $color-positive;
+  }
+  .negative {
+    color: $color-negative;
   }
 </style>
 
@@ -17,8 +20,8 @@
     }}
   >
     Has the user clicked outside this component?
-    <span class="important">
-      {clickedOutside ? 'Yes' : ''}
+    <span class={clickedOutside ? 'positive' : 'negative'}>
+      {clickedOutside ? 'Yes' : 'No'}
     </span>
   </code>
 </markup>

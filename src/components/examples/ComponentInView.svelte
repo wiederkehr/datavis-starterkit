@@ -5,10 +5,10 @@
 
 <style lang="scss">
   .positive {
-    color: seagreen;
+    color: $color-positive;
   }
   .negative {
-    color: tomato;
+    color: $color-negative;
   }
 </style>
 

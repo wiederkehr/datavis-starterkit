@@ -28,15 +28,11 @@
 <style lang="scss">
   .chart :global(div) {
     font-family: $font-family-mono;
-    background-color: #222;
+    background-color: $color-accent;
     text-align: right;
     padding: 4px;
     margin: 1px;
     color: white;
-  }
-  .chart {
-    background-color: $color-white;
-    padding: $space-4;
   }
 </style>
 

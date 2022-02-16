@@ -1,5 +1,5 @@
 <script>
-  import Meta from '$components/Meta.svelte';
+  import Meta from '$components/utilities/Meta.svelte';
   import Scroller from '@sveltejs/svelte-scroller';
   let index, offset, progress;
 </script>

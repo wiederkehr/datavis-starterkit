@@ -1,13 +1,13 @@
-function get(key) {
+export const get = key => {
   const name = key.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
   const regex = new RegExp(`[\\?&]${name}=([^&#]*)`);
   const results = regex.exec(window.location.search);
   return results === null
     ? ''
     : decodeURIComponent(results[1].replace(/\+/g, ' '));
-}
+};
 
-function set(key, value) {
+export const set = (key, value) => {
   const baseUrl = [
     window.location.protocol,
     '//',
@@ -40,6 +40,4 @@ function set(key, value) {
   params = params === '?' ? '' : params;
 
   window.history.replaceState({}, '', `${baseUrl}${params}`);
-}
-
-export default { get, set };
+};

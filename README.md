@@ -24,17 +24,16 @@
 - ✅ [Feather Icons](https://github.com/feathericons/feather) for user interface icons
 - ✅ [Textures](https://github.com/riccardoscalco/textures) for working with textures
 - ✅ [Tidy](https://github.com/pbeshai/tidy) for working with data
-- 🅾️ [Something] [luxon](https://github.com/moment/luxon), [dayjs](https://github.com/iamkun/dayjs/), [date-fns](https://github.com/date-fns/date-fns) for working with dates
+- ✅ [SVGCrowbar](https://github.com/cy6erskunk/svg-crowbar) for exporting static assets like SVG and PNG
+- 🅾️ [Something] for working with dates
+  - [luxon](https://github.com/moment/luxon)
+  - [dayjs](https://github.com/iamkun/dayjs/)
+  - [date-fns](https://github.com/date-fns/date-fns)
 - 🅾️ [Something] for user interface elements
-- 🅾️ [Something] for geometry
-- 🅾️ [Something] for light and dark themes
-  - [svelte-themer](https://github.com/josefaidt/svelte-themer)
-  - [svelte-themes](https://github.com/beynar/svelte-themes)
-  - [svelte-dark-mode](https://github.com/metonym/svelte-dark-mode)
-  - [Create a Simple Dark Mode Toggle With Svelte](https://dev.to/lenaschnedlitz/create-a-simple-dark-mode-toggle-with-svelte-4b3g)
-  - [Dark Mode in SvelteKit with and without JavaScript](https://www.davidwparker.com/posts/dark-mode-in-sveltekit-with-and-without-javascript)
+- 🅾️ [Something] for math and geometry
+  - [Math.js]
+  - [Geometric]
 - 🅾️ [Something] for working with Markdown
-- 🅾️ [Something] for exporting static assets like SVG and PNG
 
 ### Structure
 
@@ -73,8 +72,8 @@
 - ✅ Chart component
 - ✅ Custom fonts from Google Fonts
 - ✅ Sticky chart layout
-- 🅾️ SVG exporting
-- 🅾️ Theme toggle with localStorage
+- ✅ Theme toggle with localStorage
+- ✅ SVG exporting
 - 🅾️ Interface component
 - 🅾️ Search with autocomplete
 
@@ -82,6 +81,7 @@
 
 - ✅ Store for width and height of the viewport
 - ✅ Store for media queries
+- ✅ Store for theme
 - 🔄 Store for user interface state
 - 🅾️ Store state as URL parameter
 

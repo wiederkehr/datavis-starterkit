@@ -5,7 +5,7 @@
 <markup>
   <code>
     // parse<br />
-    {dayjs('1999-12-31', 'YYYY-MM-DD').toString()}<br />
+    {dayjs('31.12.1999', 'DD.MM.YYYY').toString()}<br />
     <br />
     // display<br />
     {dayjs().format('DD MMMM YYYY')}<br />

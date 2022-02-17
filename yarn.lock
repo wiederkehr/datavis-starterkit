@@ -45,6 +45,18 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@flatten-js/core@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/@flatten-js/core/-/core-1.3.4.tgz#f4ea927cacadf662f70c5ffaa93ca96791d0da40"
+  integrity sha512-VP8VYWMJPZDgNze83iS//sHHkQREtgtZ9VLn9SNX99FN49AIP/QhSeqkpW0/VPyFrUbrmkw8VumYkT09BH5bYg==
+  dependencies:
+    "@flatten-js/interval-tree" "^1.0.15"
+
+"@flatten-js/interval-tree@^1.0.15":
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/@flatten-js/interval-tree/-/interval-tree-1.0.17.tgz#8450d42827af9e8b0988cfaf7533404a51330603"
+  integrity sha512-pIv/b+K2Iwo+GxvEtaBKjXOi97gMmxFhd+8+9ZXMaOf9nfoY1OdHebO65EwnKt8SOVHPxiOkBdZMu+/4nq8T2g==
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
@@ -713,6 +725,11 @@ d3@^7.3.0:
     d3-timer "3"
     d3-transition "3"
     d3-zoom "3"
+
+date-fns@^2.28.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 dayjs@^1.10.7:
   version "1.10.7"

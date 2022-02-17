@@ -27,13 +27,12 @@
 - ✅ [SVGCrowbar](https://github.com/cy6erskunk/svg-crowbar) for exporting static assets like SVG and PNG
 - ✅ [Math.js](https://github.com/josdejong/mathjs) for math
 - ✅ [Geometric.js](https://github.com/HarryStevens/geometric) for geometry
+- ✅ [Flatten.js](https://github.com/alexbol99/flatten-js) for geometry
+- ✅ [Day.js](https://github.com/iamkun/dayjs/) for working with dates
+- ✅ [Day-fns.js](https://github.com/date-fns/date-fns) for working with dates
 - 🔄 [Something] for user interface elements
   - [Inclusive Components](https://inclusive-components.design/)
   - [Accessible Components](https://github.com/scottaohara/accessible_components)
-- 🅾️ [Something] for working with dates
-  - [luxon](https://github.com/moment/luxon)
-  - [dayjs](https://github.com/iamkun/dayjs/)
-  - [date-fns](https://github.com/date-fns/date-fns)
 - 🅾️ [Something] for working with Markdown
 
 ### Structure

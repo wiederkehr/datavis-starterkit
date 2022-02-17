@@ -1,13 +1,13 @@
-export const get = key => {
+export const getParameter = key => {
   const name = key.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
   const regex = new RegExp(`[\\?&]${name}=([^&#]*)`);
   const results = regex.exec(window.location.search);
   return results === null
-    ? ''
+    ? null
     : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-export const set = (key, value) => {
+export const setParameter = (key, value) => {
   const baseUrl = [
     window.location.protocol,
     '//',

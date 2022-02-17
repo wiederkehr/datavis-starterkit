@@ -20,6 +20,10 @@
       background: var(--color-base);
       color: var(--color-foreground);
     }
+    &:focus {
+      border-color: $color-component-focus-border;
+      outline: 2px solid $color-component-focus-outline;
+    }
   }
 </style>
 

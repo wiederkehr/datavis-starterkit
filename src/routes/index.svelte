@@ -12,6 +12,7 @@
   import DataDownloading from '$components/examples/DataDownloading.svelte';
   import DataLoading from '$components/examples/DataLoading.svelte';
   import DataWithTidy from '$components/examples/DataWithTidy.svelte';
+  import DatesWithDay from '$components/examples/DatesWithDay.svelte';
   import Math from '$components/examples/Math.svelte';
   import StoreToUrl from '$components/examples/StoreToUrl.svelte';
   import SVGDownloading from '$components/examples/SVGDownloading.svelte';
@@ -43,6 +44,9 @@
   </Card>
   <Card title="Data with Tidy.js">
     <DataWithTidy />
+  </Card>
+  <Card title="Dates with Day.js">
+    <DatesWithDay />
   </Card>
   <Card title="Math with Math.js">
     <Math />

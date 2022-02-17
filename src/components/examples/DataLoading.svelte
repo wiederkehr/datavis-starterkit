@@ -5,11 +5,4 @@
     .filter((value, index, self) => self.indexOf(value) === index);
 </script>
 
-<style lang="scss">
-  code {
-    font-family: $font-family-mono;
-    word-break: break-word;
-  }
-</style>
-
 <markup><code>Teams: {teams}</code></markup>

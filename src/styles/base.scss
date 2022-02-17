@@ -15,6 +15,11 @@ body {
   line-height: $line-height-base;
 }
 
+code {
+  font-family: $font-family-mono;
+  word-break: break-word;
+}
+
 a,
 a:focus,
 a:visited {

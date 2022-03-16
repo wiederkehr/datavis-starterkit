@@ -28,10 +28,10 @@
 - ✅ [Math.js](https://github.com/josdejong/mathjs) for math
 - ✅ [Flatten.js](https://github.com/alexbol99/flatten-js) for geometry
 - ✅ [Day-fns.js](https://github.com/date-fns/date-fns) for working with dates
+- ✅ [MDSvex](https://mdsvex.com/) for working with Markdown
 - 🔄 [Something] for user interface elements
   - [Inclusive Components](https://inclusive-components.design/)
   - [Accessible Components](https://github.com/scottaohara/accessible_components)
-- 🅾️ [Something] for working with Markdown
 
 ### Structure
 
@@ -81,8 +81,8 @@
 - ✅ Store for width and height of the viewport
 - ✅ Store for media queries
 - ✅ Store for theme
+- ✅ Store state as URL parameter
 - 🔄 Store for user interface state
-- 🔄 Store state as URL parameter
 
 ### Actions
 

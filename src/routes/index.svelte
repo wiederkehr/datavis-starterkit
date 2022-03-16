@@ -14,6 +14,7 @@
   import DataWithTidy from '$components/examples/DataWithTidy.svelte';
   import DatesWithDateFNS from '$components/examples/DatesWithDateFNS.svelte';
   import GeometryWithFlatten from '../components/examples/GeometryWithFlatten.svelte';
+  import Markdown from '$components/examples/Markdown.md';
   import Math from '$components/examples/Math.svelte';
   import StoreToUrl from '$components/examples/StoreToUrl.svelte';
   import SVGDownloading from '$components/examples/SVGDownloading.svelte';
@@ -65,6 +66,9 @@
   </Card>
   <Card title="SVG downloading">
     <SVGDownloading />
+  </Card>
+  <Card title="Markdown">
+    <Markdown />
   </Card>
   <Card title="Component in view">
     <ComponentInView />

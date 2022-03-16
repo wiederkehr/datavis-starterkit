@@ -1,7 +1,6 @@
 <script>
   import { get, writable } from 'svelte/store';
-  // import StoreToUrl from '$components/utilities/StoreToUrl.svelte';
-  import StoreToUrl from '$components/utilities/StoreToUrl2.svelte';
+  import StoreToUrl from '$components/utilities/StoreToUrl.svelte';
   import Button from '$components/interface/Button.svelte';
 
   const booleanStore = writable(true);
@@ -17,8 +16,21 @@
     { key: 'arrayStore', value: arrayStore, type: 'array' },
     { key: 'collectionStore', value: collectionStore, type: 'collection' },
   ];
-  const increment = () => numberStore.set($numberStore + 1);
-  console.log($numberStore);
+  const update = () => {
+    booleanStore.set(!$booleanStore);
+    numberStore.set($numberStore + 1);
+    stringStore.set('String' + '_' + $numberStore);
+    arrayStore.set([
+      'A' + '_' + $numberStore,
+      'B' + '_' + $numberStore,
+      'C' + '_' + $numberStore,
+    ]);
+    collectionStore.set({
+      a: 'A' + '_' + $numberStore,
+      b: 'B' + '_' + $numberStore,
+      c: 'C' + '_' + $numberStore,
+    });
+  };
 </script>
 
 <markup>
@@ -28,5 +40,5 @@
       {store.key}: {get(store.value)}<br />
     {/each}
   </code>
-  <Button on:click={increment}>Increment</Button>
+  <Button on:click={update}>Update</Button>
 </markup>

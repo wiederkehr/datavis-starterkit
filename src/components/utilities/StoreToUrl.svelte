@@ -1,122 +1,75 @@
-<script context="module">
-  import { forEach, trim } from 'lodash';
-
-  export const getLocation = () => {
-    const hashPosition = window.location.href.indexOf('#/');
-    let location =
-      hashPosition > -1 ? window.location.href.substr(hashPosition + 1) : '/';
-
-    const qsPosition = location.indexOf('?');
-    let querystring = '';
-    if (qsPosition > -1) {
-      querystring = location.substr(qsPosition + 1);
-      location = location.substr(0, qsPosition);
-    }
-    return { location, querystring };
-  };
-
-  export const setLocation = location => {
-    if (
-      !location ||
-      location.length < 1 ||
-      (location.charAt(0) != '/' && location.indexOf('#/') !== 0)
-    ) {
-      throw Error('Invalid parameter location');
-    }
-    setTimeout(() => {
-      window.location.hash = (location.charAt(0) == '#' ? '' : '#') + location;
-    }, 0);
-  };
-</script>
-
 <script>
   import { onMount } from 'svelte';
   import { get } from 'svelte/store';
+  import { forEach, trim } from 'lodash';
+  import { getParameter, setParameter } from '$functions/urlParameters.js';
 
   export let stores = [];
 
-  const storesToString = () => {
-    let urlString = '';
+  const storesToUrl = () => {
     if (stores.length > 0) {
       forEach(stores, store => {
-        if (urlString !== '') {
-          urlString += '/';
-        }
         switch (store.type) {
           case 'collection':
-            urlString += JSON.stringify(get(store.store));
+            setParameter(store.key, JSON.stringify(get(store.value)));
             break;
           case 'array':
-            urlString += get(store.store).join(',');
+            setParameter(store.key, get(store.value).join(','));
             break;
           case 'boolean':
-            urlString += get(store.store) ? 'true' : 'false';
+            setParameter(store.key, get(store.value));
             break;
           case 'number':
-            urlString += get(store.store);
+            setParameter(store.key, get(store.value));
             break;
           case 'string':
-            urlString += get(store.store);
+            setParameter(store.key, get(store.value));
             break;
           default:
-            urlString += get(store.store);
+            setParameter(store.key, get(store.value));
             break;
         }
       });
-      if (urlString !== '') {
-        setLocation('#/' + urlString);
-      }
     }
   };
 
-  const stringToStores = location => {
-    if (location === '') {
-      return;
-    }
-    if (location.charAt(0) === '/') {
-      location = location.substring(1);
-    }
-    const locationValues = location.split('/');
-    if (locationValues.length !== stores.length) {
-      return;
-    }
-    for (let i = 0; i < locationValues.length; i++) {
-      const store = stores[i];
-      const value = locationValues[i];
-      if (value === undefined || value.length === 0) {
-        continue;
-      }
-      switch (store.type) {
-        case 'collection':
-          store.store.set(JSON.parse(decodeURI(value)));
-          break;
-        case 'array':
-          store.store.set(trim(decodeURI(value)).split(','));
-          break;
-        case 'boolean':
-          store.store.set(value === 'true');
-          break;
-        case 'number':
-          store.store.set(+value);
-          break;
-        case 'string':
-          store.store.set(decodeURI(value));
-          break;
-        default:
-          store.store.set(decodeURI(value));
-          break;
-      }
+  const urlToStores = () => {
+    if (stores.length > 0) {
+      forEach(stores, store => {
+        const value = getParameter(store.key);
+        if (value === null) return;
+        switch (store.type) {
+          case 'collection':
+            store.value.set(JSON.parse(decodeURI(value)));
+            break;
+          case 'array':
+            store.value.set(trim(decodeURI(value)).split(','));
+            break;
+          case 'boolean':
+            store.value.set(value === 'true');
+            break;
+          case 'number':
+            store.value.set(+value);
+            break;
+          case 'string':
+            store.value.set(decodeURI(value));
+            break;
+          default:
+            store.value.set(decodeURI(value));
+            break;
+        }
+      });
     }
   };
 
-  const hashchange = () => {
-    stringToStores(getLocation().location);
+  const onHashChange = () => {
+    urlToStores();
   };
 
   onMount(() => {
-    stringToStores(getLocation().location);
-    stores.forEach(p => p.store.subscribe(storesToString));
+    urlToStores();
+    stores.forEach(store => store.value.subscribe(storesToUrl));
   });
 </script>
 
-<svelte:window on:hashchange={hashchange} />
+<svelte:window on:hashchange={onHashChange} />

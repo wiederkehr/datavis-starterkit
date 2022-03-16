@@ -12,9 +12,7 @@
   import DataDownloading from '$components/examples/DataDownloading.svelte';
   import DataLoading from '$components/examples/DataLoading.svelte';
   import DataWithTidy from '$components/examples/DataWithTidy.svelte';
-  import DatesWithDay from '$components/examples/DatesWithDay.svelte';
   import DatesWithDateFNS from '$components/examples/DatesWithDateFNS.svelte';
-  import GeometryWithGeometric from '../components/examples/GeometryWithGeometric.svelte';
   import GeometryWithFlatten from '../components/examples/GeometryWithFlatten.svelte';
   import Math from '$components/examples/Math.svelte';
   import StoreToUrl from '$components/examples/StoreToUrl.svelte';
@@ -47,17 +45,11 @@
   <Card title="Data with Tidy.js">
     <DataWithTidy />
   </Card>
-  <Card title="Dates with Day.js">
-    <DatesWithDay />
-  </Card>
   <Card title="Dates with Date-fns.js">
     <DatesWithDateFNS />
   </Card>
   <Card title="Math with Math.js">
     <Math />
-  </Card>
-  <Card title="Geometry with Geometric.js">
-    <GeometryWithGeometric />
   </Card>
   <Card title="Geometry with Flatten.js">
     <GeometryWithFlatten />

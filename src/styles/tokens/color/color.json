@@ -1,0 +1,25 @@
+{
+  "color": {
+    "mono_0": { "value": "#ffffff" },
+    "mono_1": { "value": "#f7f7f7" },
+    "mono_2": { "value": "#e3e3e3" },
+    "mono_3": { "value": "#c3c3c3" },
+    "mono_4": { "value": "#979797" },
+    "mono_5": { "value": "#676767" },
+    "mono_6": { "value": "#3b3b3b" },
+    "mono_7": { "value": "#1b1b1b" },
+    "mono_8": { "value": "#080808" },
+    "mono_9": { "value": "#000000" },
+    "white": { "value": "{color.mono_0}" },
+    "black": { "value": "{color.mono_9}" },
+    "blue_light": { "value": "#0d66d0" },
+    "blue_dark": { "value": "#095aba" },
+    "red_light": { "value": "#c9252d" },
+    "red_dark": { "value": "#bb121a" },
+    "green_light": { "value": "#12805c" },
+    "green_dark": { "value": "#107154" },
+    "accent": { "value": "{color.blue_light}" },
+    "positive": { "value": "{color.green_light}" },
+    "negative": { "value": "{color.red_light}" }
+  }
+}

@@ -5,10 +5,20 @@
   import '$styles/app.scss';
 </script>
 
+<style lang="scss">
+  .layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+</style>
+
 <markup>
-  <Header />
-  <Main>
-    <slot />
-  </Main>
-  <Footer />
+  <div class="layout">
+    <Header />
+    <Main>
+      <slot />
+    </Main>
+    <Footer />
+  </div>
 </markup>

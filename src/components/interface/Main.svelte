@@ -4,6 +4,7 @@
 
 <style lang="scss">
   main {
+    flex: 1;
     padding: $space-4 0;
   }
 </style>

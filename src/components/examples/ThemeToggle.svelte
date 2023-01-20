@@ -1,5 +1,5 @@
 <script>
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
   import theme from '$stores/theme.js';
   import Theme from '$components/utilities/Theme.svelte';
   import Button from '$components/interface/Button.svelte';
